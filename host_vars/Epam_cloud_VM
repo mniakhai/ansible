@@ -1,0 +1,8 @@
+################################################
+##          Provision Variables               ##
+################################################
+
+# Common variables
+
+inventory_hostname_short: "ecsc00a00eeb"
+inventory_hostname:  "ecsc00a00eeb.epam.com"

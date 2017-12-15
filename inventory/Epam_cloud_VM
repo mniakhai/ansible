@@ -1,0 +1,5 @@
+[local]
+localhost
+
+[services]
+Epam_cloud_VM   ansible_ssh_host=10.6.220.237

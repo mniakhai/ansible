@@ -1,0 +1,12 @@
+# setup common system applications
+# ansible-playbook -i ./inventory/Epam_cloud common.yml --extra-vars "env=jenkins user=user" -vv
+#sudo ansible-playbook -i "localhost" common.yml --extra-vars "env=localhost user=Maksim_Niakhai@epam.com" -vv
+
+
+- hosts: "{{env}}"
+  user: "{{user}}"
+  become: yes
+  become_method: sudo
+  gather_facts: true
+  roles:
+    - common
